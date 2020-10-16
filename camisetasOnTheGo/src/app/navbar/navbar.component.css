@@ -1,3 +1,8 @@
 a {
     cursor: pointer;
 }
+
+#nav-cores{
+    color:black !important;
+    letter-spacing: 1px !important;
+}

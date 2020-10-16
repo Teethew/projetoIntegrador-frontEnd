@@ -6,45 +6,38 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <style>
+        nav {align-content:center;}
+    </style>
 
+   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" routerLink='/home'>Início</a>
+                <a id="nav-cores" class="nav-link" routerLink='/home'>INÍCIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink='/produtos'>Loja</a>
+                <a id="nav-cores" class="nav-link" routerLink='/produtos'>LOJA</a>
             </li>
             <li class="nav-item">
-                <a routerLink='/sobrenos' class="nav-link">Sobre nós</a>
+                <a routerLink='/sobrenos' id="nav-cores" class="nav-link">SOBRE NÓS</a>
             </li>
             <li>
-                <a routerLink='/contato' class="nav-link">Contato</a>
+                <a routerLink='/contato' id="nav-cores" class="nav-link">CONTATO</a>
             </li>
             <div *ngIf='authService.btnLogin()'>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/login">Login</a>
+                    <a id="nav-cores" class="nav-link" routerLink="/login">LOGIN</a>
                 </li>
             </div>
             <div *ngIf='authService.btnLogin()'>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/cadastro">Cadastro</a>
+                    <a id="nav-cores" class="nav-link" routerLink="/cadastro">CADASTRO</a>
                 </li>
             </div>
-            <div *ngIf='authService.btnSair()'>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/admin">Admin</a>
-                </li>
-            </div>
-            <div *ngIf='authService.btnSair()'>
-                <li class="nav-item">
-                    <a (click)='sair()' class="nav-link">Sair</a>
-                </li>
-            </div>
-
-
         </ul>
     </div>
+
 </nav>
 
 
